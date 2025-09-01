@@ -6,23 +6,33 @@
     <link href="../dist/output.css" rel="stylesheet">
     <title>The Shoe Company</title>
 </head>
-<body class="bg-gray-600 text-amber-50">
+<body class="bg-black text-amber-50">
     
     <!-- navbar -->
-    <header class="h-14 sm:h-22 lg:h-24 flex justify-between items-center sticky">
-        <a href="#home" class="flex flex-col ml-5 lg:ml-14">
+    <header class="h-14 sm:h-22 lg:h-24 flex justify-between items-center fixed w-full max-w-[1440px] left-[50%] -translate-x-[50%] z-50">
+        <a href="#home" class="flex flex-col ml-5 sm:ml-14">
             <img class="w-14 h-12 sm:w-28 sm:h-22 lg:w-24 lg:h-22" src="../images/logo.png" alt="">
             <p class="text-[8px] -mt-3 sm:text-sm sm:-mt-6 sm:mb-4 lg:text-sm lg:-mt-6">Shoe Company</p>
         </a>
-        <nav class=" hidden sm:flex sm:text-sm gap-5 mr-8 md:text-lg lg:mr-14 lg:text-xl lg:gap-8 ">
+        <nav class=" hidden sm:flex sm:text-sm gap-5 mr-8 md:text-lg sm:mr-14 lg:text-xl lg:gap-8 ">
             <a href="#home">Home</a>
             <a href="#howitwork">How It Works?</a>
             <a href="#about">About</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#constact">Contact Us</a>
         </nav>
-        <button class="sm:hidden mr-5 text-3xl"> ☰</button>
+        <button class="sm:hidden mr-5 text-3xl">☰</button>
     </header>
+
+    <!-- hero -->
+    <section id="hero" class="bg-[url('../images/hero-bg.png')] pt-20 bg-no-repeat bg-[length:100%_50%] bg-bottom sm:bg-[length:50%_100%] sm:bg-no-repeat sm:bg-right sm:pt-32 max-w-[1440px] mx-auto">
+        <div class="flex flex-col items-start px-5 pb-24 sm:flex-row sm:justify-between sm:items-center mx-auto sm:px-12 lg:px-20">
+             <h1 class="text-2xl leading-[2xl] sm:text-4xl sm:leading-[60px] sm:pb-14 md:text-5xl md:leading-[80px] md:pb-16 lg:text-6xl font-bold">THE <br>SHOE <br> COMPANY</h1>
+            <div>
+                <img class="-mt-6 sm:w-[500px] lg:w-[600px]" src="../images/mainShoe.png" alt="">
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>

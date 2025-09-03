@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +9,14 @@
 <body class="bg-black text-amber-50">
     
     <!-- navbar -->
-    <header class="h-14 sm:h-22 lg:h-24 flex justify-between items-center fixed w-full max-w-[1440px] left-[50%] -translate-x-[50%] z-50">
-        <a href="#home" class="flex flex-col ml-5 sm:ml-14">
+    <header class="h-14 sm:h-22 lg:h-24 flex justify-between items-center fixed w-full max-w-[1440px] left-[50%] -translate-x-[50%] z-50 ">
+        <a href="#home" class="flex flex-col ml-5 sm:ml-14 ">
             <img class="w-14 h-12 sm:w-28 sm:h-22 lg:w-24 lg:h-22" src="../images/logo.png" alt="">
             <p class="text-[8px] -mt-3 sm:text-sm sm:-mt-6 sm:mb-4 lg:text-sm lg:-mt-6">Shoe Company</p>
         </a>
         <nav class=" hidden sm:flex sm:text-sm gap-5 mr-8 md:text-lg sm:mr-14 lg:text-xl lg:gap-8 ">
             <a href="#home">Home</a>
-            <a href="#howitwork">How It Works?</a>
+            <a href="#howitworks">How It Works?</a>
             <a href="#about">About</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#constact">Contact Us</a>
@@ -25,12 +25,38 @@
     </header>
 
     <!-- hero -->
-    <section id="hero" class="bg-[url('../images/hero-bg.png')] pt-20 bg-no-repeat bg-[length:100%_50%] bg-bottom sm:bg-[length:50%_100%] sm:bg-no-repeat sm:bg-right sm:pt-32 max-w-[1440px] mx-auto">
+    <section id="home" class="bg-[url('../images/hero-bg.png')] pt-20 bg-no-repeat bg-[length:100%_50%] bg-bottom sm:bg-[length:50%_100%] sm:bg-no-repeat sm:bg-right sm:pt-32 max-w-[1440px] mx-auto">
         <div class="flex flex-col items-start px-5 pb-24 sm:flex-row sm:justify-between sm:items-center mx-auto sm:px-12 lg:px-20">
              <h1 class="text-2xl leading-[2xl] sm:text-4xl sm:leading-[60px] sm:pb-14 md:text-5xl md:leading-[80px] md:pb-16 lg:text-6xl font-bold">THE <br>SHOE <br> COMPANY</h1>
             <div>
                 <img class="-mt-6 sm:w-[500px] lg:w-[600px]" src="../images/mainShoe.png" alt="">
             </div>
+        </div>
+    </section>
+
+    <!-- How it works  -->
+    <section id="howitworks"  class="mx-auto my-14 max-w-[1440px] scroll-mt-24">
+        <h1 class=" text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">have they finally made the <br> perfect workout shoe?</h1>
+        <div class="relative mx-auto mt-36 max-w-sm px-10 sm:min-w-lg md:max-w-2xl lg:min-w-4xl">
+            <img class="rotate-8" src="../images/how-it-works-image.png" alt="">
+
+            <div class="-top-26 -translate-x-6 sm:-translate-x-10 md:-translate-x-4 xl:-translate-x-36 absolute">
+                <h1 class="text-xl mb-2 sm:text-2xl font-bold">THE HEEL</h1>
+                <p class="text-xs sm:text-sm md:text-lg">The heel is well-built, <br>has appropriate elevation <br> and is not to rigid.</p>
+                <img class="w-18 rotate-65 lg:w-34" src="../images/heel arrow img.png" alt="">
+            </div>
+
+            <div class="-top-24 right-2 sm:-right-6 md:-top-0 absolute">
+                <h1 class="text-xl mb-2 font-bold sm:text-2xl">THE FRONT</h1>
+                <p class="text-xs mb-2 sm:text-sm md:text-lg">The front is comfortable <br> and adjusts well to the <br> shape of your foot.</p>
+                <img class="w-18 rotate-120 md:rotate-0 lg:w-34" src="../images/front arrow img.png" alt="">
+            </div>
+
+            <div class="absolute -bottom-18 sm:-bottom-16 md:bottom-0">
+                <img class="w-20 ml-18 -mb-10 sm:ml-24 lg:w-34" src="../images/taraction arrow img.png" alt="">
+                <h1 class="text-xl mb-2 font-bold sm:text-2xl">TRACTION</h1>
+                <p class="text-xs sm:text-sm md:text-lg">The shoe has good <br>traction and doesn't <br> slip easily.</p>
+            </div> 
         </div>
     </section>
 
